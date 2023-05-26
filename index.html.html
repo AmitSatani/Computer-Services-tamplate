@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        @font-face{
+            src: url(font/LemonMilk.otf);
+            font-family: amit;
+        }
+        .header{
+            width: 100%;
+            height: 110vh;
+            background-position:center;
+            background-size: cover;
+            
+        }
+        .header-sub {
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            display: flex;
+            padding: 50px;
+            justify-content: space-between;
+        }
+        p{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:black;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: left;
+            
+        }
+        .header-subs {
+            width: 80%;
+            height:500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            margin: 0px auto;
+            grid-gap:45px;
+        }
+        h1{
+            color:black;
+            font-family: amit;
+            font-size: 30px;
+        }
+        .white{
+            color: whitesmoke;
+            letter-spacing: 3px;
+        }
+        .text{
+            color: whitesmoke;
+        }
+        .dtl{
+            padding-top: 20px;
+            text-align: left;
+            font-size: 11px;
+        }
+        .form{
+            background-color: rgba(245, 245, 245, 0.407);
+            text-align: center;
+            padding: 20px 20px;
+            height: 0px auto;
+            border-radius:5px ;
+        }
+        .form .tital{
+            color: black;
+            border-bottom: 5px solid black;
+            margin: 0px auto;
+        }
+        .form input{
+            display: block;
+            margin: 30px 35px;
+            height: 50px;
+            width: 300px;
+            background-color:black;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            color: whitesmoke;
+            
+        }
+        .form .btn2{
+            background-color:rgba(165, 42, 42, 0.576) ;
+        
+        }
+        .about{
+            width: 100%;
+            height: 350px;
+            background-color: whitesmoke;  
+        }
+        .heding h2{
+            display: flex;
+            justify-content: center;
+            font-family: amit;
+            padding-top: 30px;
+        }
+        .row{
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            display: flex;  
+            grid-gap:30px; 
+            padding: 30px;
+        }
+        .col-1{
+            padding: 20px auto;
+            padding-top: 50px;
+        }
+        .fa-solid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            font-size: 30px;
+            color:brown ;
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            text-align: justify;
+            margin-top: 20px;
+            font-family: amit;
+        }
+        .coldtl{
+            display: flex;
+            justify-content:center;
+            text-align: justify;
+            align-items: center;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        .container{
+            width: 100%;
+            height: 330px;
+            margin: 0px auto;
+            display: flex;  
+            grid-gap:30px; 
+            padding: 30px;
+            background-color: rgb(233, 150, 122);
+
+        }
+        .container-sub{
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            display: flex;  
+            grid-gap:30px; 
+            padding: 30px;
+            justify-content: space-between;
+        }
+        .col-2{
+            padding: 20px auto;
+            padding-top: 50px;
+        
+        }
+        h4{
+            display: flex;
+            justify-content:center;
+            text-align: center;
+            align-items: center;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color: whitesmoke;
+            font-size: 20px;
+        }
+        .fafa{
+            color: whitesmoke;
+            font-size: 70px;
+        }
+        .no{
+            color: whitesmoke;
+        }
+        .container-2{
+            width: 100%;
+            height:500px;
+            background-color: whitesmoke;  
+
+        }
+        .row-2{
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            display: flex;  
+            grid-gap:30px; 
+            padding: 30px;
+        }
+        .col-3{
+            padding: 20px auto;
+            padding-top: 50px;
+        
+        }
+        .row-3{
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            display: flex;  
+            grid-gap:30px; 
+            padding: 30px;
+        }
+        .col-4{
+            padding: 20px auto;
+            padding-top: 150px;
+        
+        }
+        .footer{
+            width: 100%;
+            height:300px;
+            background-color: rgb(233, 150, 122);  
+
+        }
+        .dtl1{
+            width: 80%;
+            height: 100px;
+            margin: 0px auto;
+            display: flex;  
+            padding: 30px;
+        }
+        .dtl2{
+            display: flex;
+            justify-content: center;
+            text-align: justify;
+            font-size: 10px;
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+        img{
+            height: 200px;
+            width: 170px;
+            display: flex;
+            background-color: grey;
+            box-shadow:inset 1px 2px 2px 3px black; 
+
+        }
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 111vh;
+            z-index: -1;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- heding page start -->
+    <div class="header">
+        <video autoplay muted loop id="myVideo">
+            <source src="vedio/sherwoods-beach-sunrise.mp4" type="video/mp4">
+          </video>
+
+        <div class="header-sub">
+            <p class="text">comuter repair</p>
+            <p class="text">call us : 9106164973</p> 
+        </div>
+
+        <div class="header-subs">
+            <div class="tital">
+               <h1 class="white">DEKSTOP & LAPTOP COMPUTER SERVICES </h1>
+               <p class="dtl text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem perferendis</p>
+            </div>
+            <div class="form">
+                <h1 class="tital">LOOKING FOR US TO HELP YOU?</h1>
+                <input type="text" placeholder="Name" id="first name" minlength="5" maxlength="
+                20"> 
+                <input type="email" placeholder="Email" id="email">
+                <input type="mobile number" placeholder="Phone" id="mobile number" maxlength="
+                10">
+                <input type="submit" value="SUBMIT" class="btn2">
+             </div>
+         </div>
+    </div>
+
+    <!-- heding page end -->
+
+    <!-- about start -->
+
+    <div class="about">
+        <div class="heding">
+            <h2>WHAT DO WE DO?</h2>
+        </div>
+        <div class="row">
+        <div class="col-1">
+            <i class="fa-solid fa-1"></i>
+            <h3>ON-SITE SERVICE</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem.</p>
+        </div>
+        <div class="col-1">
+            <i class="fa-solid fa-2"></i>
+            <h3>REMOTE SERVICE</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem. </p>
+        </div>
+        <div class="col-1">
+            <i class="fa-solid fa-3"></i>
+            <h3>MANAGED IT SERVICE</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem. </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- about end -->
+
+    <!-- review start -->
+    <div class="container">
+        <div class="container-sub">
+            <div class="col-2">
+                <i class="fafa fa-solid fa-car"></i>
+                <h3 class="no">3000+</h3>
+                <h4>ON-SITE SERVICE</h4>
+            </div>
+            <div class="col-2">
+                <i class="fafa fa-solid fa-user"></i>
+                <h3 class="no">1000+</h3>
+                <h4>HAPPY CUSTOMER</h4>
+            </div>
+            <div class="col-2">
+                <i class="fafa fa-solid fa-laptop"></i>
+                <h3 class="no">2000+</h3>
+                <h4>REMOTE SUPPORT</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- review end -->
+
+    <!-- service start -->
+
+
+    <div class="container-2">
+        <div class="row-2">
+        <div class="col-3">
+            <i class="fa-solid fa-user"></i>
+            <h3>COMPUTER REPAIR</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem.</p>
+        </div>
+        <div class="col-3">
+            <i class="fa-solid fa-computer"></i>
+            <h3>COMPUTER UPGRADE</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem. </p>
+        </div>
+        <div class="col-3">
+            <i class="fa-solid fa-bug"></i>
+            <h3>VIRUS REMOVAL</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem. </p>
+        </div>
+    </div>
+
+    <div class="row-3">
+        <div class="col-4">
+            <i class="fa-solid fa-wifi"></i>
+            <h3>NETWORKING</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem.</p>
+        </div>
+        <div class="col-4">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <h3>BACKUP SOLUTIONS</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem. </p>
+        </div>
+        <div class="col-4">
+            <i class="fa-solid fa-gear"></i>
+            <h3>MANAGED SERVICE</h3>
+            <p class="coldtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem. </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- service end -->
+
+    <div class="footer">
+        <div class="heding">
+            <h2>WHAT OUR CLIENTS SAYS</h2>
+        </div>
+        <div class="dtl1">
+            <div>
+                <img src="img/doubel.png" alt="">
+            </div>
+             <div class="person">
+                <img src="img/persone.jpg" alt="">
+             </div>
+             <div>
+                <p class="dtl2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt recusandae culpa reprehenderit sint quo pariatur aperiam, assumenda rem. Magnam illo voluptas veniam consectetur blanditiis. Earum sint iure ea tempora est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus? Rem ut et, id repudiandae dolor, nihil repellat soluta quis fuga perspiciatis assumenda earum asperiores voluptas nam vero iure autem.</p>
+             </div>
+        </div>
+
+        .
+    </div>
+
+
+
+    
+    
+</body>
+</html>
